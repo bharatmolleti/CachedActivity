@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/emergencyContactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="Emergency Contact Number" />
+
+    <EditText
+        android:id="@+id/emergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencyContactTitle"
+        android:layout_centerHorizontal="true"
+        android:digits="0123456789+"
+        android:ems="10"
+        android:hint="Enter Emergency Contact Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:paddingBottom="15dp" />
+
+    <TextView
+        android:id="@+id/postalAddressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/emergencyContact"
+        android:padding="5dp"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/postalAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emergencyContact"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+
+        android:hint="Enter Your Current Address Here"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:lines="4"
+        android:maxLength="150"
+        android:maxLines="5"
+        android:minLines="3"
+        android:padding="10dp"
+        android:paddingBottom="15dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/register"
+        android:paddingTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postalAddress"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="Register" />
+
+
+</RelativeLayout>
